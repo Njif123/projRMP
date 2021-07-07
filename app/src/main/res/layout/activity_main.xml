@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".MainActivity"
+    android:background="@drawable/gradient">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/logo"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/tv_highscore"
+        android:fontFamily="@font/roboto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:text="Рекорд: 0"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:layout_below="@id/logo"/>
+
+    <TextView
+        android:id="@+id/tv_balance"
+        android:fontFamily="@font/roboto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:text="Баланс: 100"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:layout_below="@id/tv_highscore"/>
+
+    <TextView
+        android:id="@+id/tv_set_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Выберите категорию:"
+        android:textColor="@color/white"
+        android:fontFamily="@font/roboto"
+        android:layout_below="@id/tv_balance"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"/>
+
+    <Spinner
+        android:id="@+id/spinner_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tv_set_category"
+        android:layout_below="@id/tv_set_category"
+        android:layout_marginTop="16dp"
+        android:theme="@style/SpinnerTheme"
+        android:layout_marginBottom="15dp"
+        />
+
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinner_category"
+        android:layout_centerHorizontal="true"
+        android:text="Начать!"
+        android:background="@drawable/custom_btn"
+        android:fontFamily="@font/roboto_bold"
+        android:visibility="visible"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/btn_start_two_pl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_start"
+        android:layout_centerHorizontal="true"
+        android:text="Режим дуэли!"
+        android:background="@drawable/custom_btn"
+        android:fontFamily="@font/roboto_bold"
+        android:visibility="visible"
+        android:textColor="@color/white"
+        android:textSize="40sp"/>
+
+</RelativeLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".QuizActivity"
+    android:background="@drawable/gradient">
+
+    <TextView
+        android:id="@+id/tv_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Счёт: 0"
+        android:textColor="@color/white"
+        android:fontFamily="@font/roboto"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/tv_que_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_score"
+        android:text="Вопрос 1/x"
+        android:textColor="@color/white"
+        android:fontFamily="@font/roboto"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/tv_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_que_count"
+        android:text="Категория: "
+        android:textColor="@color/white"
+        android:fontFamily="@font/roboto"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/tv_balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_category"
+        android:text="Баланс: "
+        android:textColor="@color/white"
+        android:fontFamily="@font/roboto"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:text="00:30"
+        android:textColor="@color/white"
+        android:fontFamily="@font/roboto_bold"
+        android:textSize="35sp" />
+
+    <Button
+        android:id="@+id/btn_minusOption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_question"
+        android:layout_alignParentEnd="true"
+        android:textColor="@color/white"
+        android:fontFamily="@font/roboto_bold"
+        android:background="@drawable/custom_btn"
+        android:text="-1"
+        android:layout_marginBottom="10dp"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/tv_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/radio_group"
+        android:layout_marginBottom="16dp"
+        android:text="Выберите ответ:"
+        android:textAlignment="center"
+        android:textSize="35sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/roboto_bold"/>
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+
+        <RadioButton
+            android:textColor="@color/white"
+            android:fontFamily="@font/roboto"
+            android:id="@+id/rad_btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Option 1"
+            android:textSize="25sp"
+            android:layout_marginBottom="15dp"/>
+
+        <RadioButton
+            android:textColor="@color/white"
+            android:fontFamily="@font/roboto"
+            android:id="@+id/rad_btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Option 2"
+            android:textSize="25sp"
+            android:layout_marginBottom="15dp"/>
+
+        <RadioButton
+            android:textColor="@color/white"
+            android:fontFamily="@font/roboto"
+            android:id="@+id/rad_btn3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Option 3"
+            android:textSize="25sp"
+            android:layout_marginBottom="15dp"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_confirm_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radio_group"
+        android:layout_marginTop="16dp"
+        android:text="Ответить"
+        android:background="@drawable/custom_btn"
+        android:textColor="@color/white"
+        android:fontFamily="@font/roboto_bold"
+        android:textSize="25sp"/>
+
+</RelativeLayout>
