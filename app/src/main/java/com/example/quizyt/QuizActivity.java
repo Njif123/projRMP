@@ -98,7 +98,7 @@ public class QuizActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 int answerNr = currentQuestion.getAnswerNr();
-                if(balance>10){
+                if(balance>9){
                 switch (answerNr){
                     case 1:
                         rb2.setVisibility(View.INVISIBLE);

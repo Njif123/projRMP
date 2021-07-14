@@ -60,6 +60,7 @@
         android:layout_marginTop="16dp"
         android:theme="@style/SpinnerTheme"
         android:layout_marginBottom="15dp"
+
         />
 
     <Button
@@ -68,7 +69,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/spinner_category"
         android:layout_centerHorizontal="true"
-        android:text="Начать!"
+        android:text="Один игрок!"
         android:background="@drawable/custom_btn"
         android:fontFamily="@font/roboto_bold"
         android:visibility="visible"

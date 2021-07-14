@@ -105,7 +105,7 @@ public class MainActivity extends AppCompatActivity {
 
         ArrayAdapter<Category> categoryArrayAdapter = new ArrayAdapter<>(this,
                 android.R.layout.simple_spinner_item, categories);
-        categoryArrayAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        categoryArrayAdapter.setDropDownViewResource(R.layout.spinner_item);
         spinnerCategory.setAdapter(categoryArrayAdapter);
     }
     //получение рекорда
